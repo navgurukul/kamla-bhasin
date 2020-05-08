@@ -42,10 +42,15 @@
         $('#input_apiKey').hide();
 
         var url = window.location.search.match(/url=([^&]+)/);
-        if (url && url.length > 1) {
-            url = decodeURIComponent(url[1]);
+        if (window.location.href.indexOf("kadam.navgurukul.org")>-1) {
+            url = "/api/swagger.json"
         } else {
-            url = "{{{hapiSwagger.jsonPath}}}";
+            if (url && url.length > 1) {
+                url = decodeURIComponent(url[1]);
+            } else {
+                url = "{{{hapiSwagger.jsonPath}}}";
+            }
+            
         }
 
         // Pre-load translate
