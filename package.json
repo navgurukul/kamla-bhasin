@@ -15,7 +15,7 @@
   "scripts": {
     "knex": "knex",
     "start": "nodemon --watch lib server",
-    "build": "cp -r node_modules/hapi-swagger/public/swaggerui swaggerui",
+    "build": "cp -r node_modules/hapi-swagger/public/swaggerui swaggerui && cp node_modules/hapi-swagger/extend.json swaggerui/",
     "test": "lab -a code -I '__core-js_shared__' -L",
     "lint": "eslint lib --fix"
   },
