@@ -59,10 +59,20 @@ After importing the schema you can run the migrations using `npm run knex migrat
 ## Important Commands
 
 ### Export Schema of DB
-`mysqldump -u root -p --no-data chanakya > schema.sql`
+
+    mysqldump -u root -p --no-data chanakya > schema.sql
 
 ### Import Schema
-`mysql -u <insert your username> -p chanakya < sqlScripts/initialSchema.sql`
+
+    mysql -u <insert your username> -p chanakya < sqlScripts/initialSchema.sql
+
+ 
 
 ### Run server with Auto Reload
-`npm start`
+`first you have to run this command`
+
+    npm run build 
+
+`Then you can start server through this`
+
+    npm start
