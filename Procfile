@@ -1,1 +1,1 @@
-web: node --watch lib server
+web: node server/index.js
