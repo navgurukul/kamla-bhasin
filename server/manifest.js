@@ -98,7 +98,7 @@ module.exports = new Confidence.Store({
                             },
                             connection: {
                                 database: {
-                                    $env: "DATABASE_URL" ||'DB_NAME',
+                                    $env: 'DB_NAME',
                                 },
                                 host: {
                                     $env: 'DB_HOST'
